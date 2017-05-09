@@ -13,14 +13,10 @@
 //while (true)
 //{
 
-//set the filename to match a pattern - in this case the filename should end with '../img/*.png'
-$file = glob("../img/*.png");
 
-//Counts the number of files in the folder
-$file_count = count($file);
 
 //output random image from the folder
-$output = $file[rand(1, $file_count) - 1];
+$output = getImage();
 
 //twig
 require_once '../vendor/autoload.php';
@@ -42,4 +38,18 @@ echo $template->render($parametersToTwig);
 //sleep(3);
 //}
 
+
+function getImage()
+{
+    //set the filename to match a pattern - in this case the filename should end with '../img/*.png'
+    $file = glob("../img/*.png");
+
+//Counts the number of files in the folder
+    $file_count = count($file);
+
+//output random image from the folder
+    $output = $file[rand(1, $file_count) - 1];
+
+    return $output;
+}
 
