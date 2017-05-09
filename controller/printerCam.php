@@ -53,3 +53,4 @@ function getImage()
     return $output;
 }
 
+//This comment is only used to make a test commit to check if GitHub/Slack integration works
