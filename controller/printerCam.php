@@ -13,7 +13,7 @@
 //while (true)
 //{
 
-
+// comment by Norbert ...............................
 
 //output random image from the folder
 $output = getImage();
