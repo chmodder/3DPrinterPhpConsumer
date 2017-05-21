@@ -14,7 +14,7 @@ $twig = new Twig_Environment($loader, array(
     // 'cache' => '/path/to/compilation_cache',
     'auto_reload' => true
 ));
-$template = $twig->loadTemplate('camView.html.twig');
+$template = $twig->loadTemplate('latestView.twig');
 
 $parametersToTwig = array("result" => $result);
 echo $template->render($parametersToTwig);

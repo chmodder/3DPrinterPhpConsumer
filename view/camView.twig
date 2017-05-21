@@ -9,7 +9,6 @@
     <input type="submit" value="To startpage">
 </form>
 
-
 {#
 does not work
 {% if output is not null and output is not empty %}
@@ -20,9 +19,7 @@ does not work
 {% else %}
 
 no images to show#}
-
-<img src="{{ output }}" alt="camImage"/>
-
+<img src="{{ output }}"/>
 <img src="{{ result }}"/>
 
 <form action="../controller/printerCam.php" method="get">
