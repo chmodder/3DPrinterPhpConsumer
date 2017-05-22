@@ -6,7 +6,29 @@
 </head>
 <body>
 <form action="controller/printerCam.php" method="get">
-    <input type="submit" value="check 3D printer cam">
+    <input type="submit" value="Check the 3D printer cam">
+</form>
+
+<form action="controller/GetLatestImage.php" method="get">
+    <input type="submit" value="See latest image">
+</form>
+
+<form action="controller/GetBooking.php" method="get">
+    <h1>Booking</h1>
+    <input type="submit" value="Show Bookings">
+</form>
+
+<form action="controller/AddBooking.php" method="get">
+    <h1>Add Booking</h1>
+    Booking Description : <input type="text" name="textdescription" required>
+    <input type="submit" value="Add" >
+</form>
+
+<form action="controller/DeleteBooking.php" method="get">
+    <h1>Delete Booking</h1>
+    Enter Booking ID to be Deleted: <input type="text" name="textId" required>
+    <input type="submit" value="Delete" >
 </form>
 </body>
 </html>
+
