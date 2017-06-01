@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--TWIG page to show the list of the bookings
+Atena + Jane-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D printer cam</title>
+</head>
+<body>
+<form action="../index.html" method="get">
+    <input type="submit" value="To startpage">
+</form>
+
+
+{% if result is empty %}
+    <p>No booking</p>
+{% else %}
+    <ul>
+        {% for booking in result %}
+            <li>
+                {{ booking.Id }}
+                <b>{{ booking.Description }}</b>
+            </li>
+        {% endfor %}</ul>
+{% endif %}
+
+</body>
+</html>
